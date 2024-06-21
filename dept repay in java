@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int p=s.nextInt();
+        int t=s.nextInt();
+        int r=s.nextInt();
+        float interest=(p*t*r)/100;
+        System.out.printf("%.2f\n",interest);
+        float amount=interest+p;
+        System.out.printf("%.2f\n",amount);
+        float discount=(interest*2)/100;  
+        System.out.printf("%.2f\n",discount);
+        float finalamount=amount-discount;
+        System.out.printf("%.2f\n",finalamount);
+        
+    }
+}
