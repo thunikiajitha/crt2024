@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class AreaCalculator {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+       int a;
+       a=s.nextInt();
+       int x=a*a;
+       int l,b;
+       l=s.nextInt();
+       b=s.nextInt();
+       int c=l*b;
+       float r;
+       r=s.nextFloat();
+       float d=3.14f*r*r;
+       System.out.println(x);
+       System.out.println(c);
+       System.out.printf("%.2f",d);
+    }
+}
