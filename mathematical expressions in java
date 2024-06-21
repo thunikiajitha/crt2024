@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        long t=s.nextLong();
+        for(int i=0;i<t;i++)
+        {
+            int A=s.nextInt();
+            char S=s.next().charAt(0);
+            int B=s.nextInt();
+            char Q=s.next().charAt(0);
+            int C=s.nextInt();
+            int result;
+            if(S=='+')
+            {
+                result=A+B;
+            }
+            else if(S=='-')
+            {
+                result=A-B;
+            }
+            else
+            {
+                result=A*B;
+            }
+            if(result==C)
+                System.out.println("Yes");
+            else
+                System.out.println(result);
+            }
+        }
+    }
