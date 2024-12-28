@@ -1,0 +1,42 @@
+# Simple caluculator script
+#Function for addition
+def add(x,y):
+    returnX+Y
+#Function for addition
+def add(x,y):
+    returnX-Y
+#Function for multiplication
+def multiply(x,y):
+    returnx*y
+#Function for division
+def divide(x,y):
+    if Y==0:
+        return"Error!Division by zero."
+    else:
+        returnX/Y
+#display the options for the user
+print("Select operation.")
+print"1.add")
+print("2.subtract")
+print("3.multiply")
+print("4.divide")
+#Get user input
+operation=input("Enter choice(1/2/3/4):")
+#Get the numbers
+num1=float(input("Enter first number:"))
+num2=float(input("Enter second number:"))
+#Perform calculation based on the operation chosen
+if operation=='1':
+    result=add(num1,num2)
+    print(f"{num}+{num2}={result}")
+elif operation=='2':
+    result=subtract(num1,num2)
+    print(f"{num1}-{num2}={result})
+elif operation=='3':
+    result=multiply(num1,num2)
+    print(f"{num1}*{num2}={result})
+elif operation=='4':
+    result=divide(num1,num2)
+    print(f"{num1}/{num2}={result})
+else:
+    print(Invalid input! please choose a valid operation.)
